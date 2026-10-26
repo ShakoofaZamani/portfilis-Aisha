@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Ayesha Rahmat student portfolio demo" />
+    <title>Contact | Ayesha Rahmat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="container">
+        <a class="logo" href="index.html">Ayesha<span>.</span></a
+        ><input class="menu-toggle" type="checkbox" id="menu-toggle" /><label
+          class="hamburger"
+          for="menu-toggle"
+          aria-label="Toggle menu"
+          >☰</label
+        >
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Portfolio ▾</a>
+            <div class="dropdown-content">
+              <a href="projects.html#web">Web Design</a
+              ><a href="projects.html#creative">Creative Work</a
+              ><a href="projects.html#practice">Practice Projects</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Say Hello</span>
+          <h1>Let's <em>Connect.</em></h1>
+          <p class="intro" style="margin: auto">
+            Questions, ideas, or just a friendly hello?
+          </p>
+        </div>
+      </section>
+      <section class="section container contact-grid">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title">Let's start a conversation.</h2>
+          <p class="muted">
+            This is a classroom demonstration portfolio. Replace the placeholder
+            contact information with your own before publishing.
+          </p>
+          <p>✉️ <a href="mailto:student@example.com">student@example.com</a></p>
+          <p>📍 Afghanistan</p>
+          <div class="skills">
+            <span class="skill">HTML</span><span class="skill">CSS</span
+            ><span class="skill">Creative Learning</span>
+          </div>
+        </div>
+        <form
+          class="contact-box"
+          action="mailto:student@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h3>Send a Message</h3>
+          <label for="name">Your Name</label
+          ><input
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          /><label for="email">Your Email</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          /><label for="message">Message</label
+          ><textarea
+            id="message"
+            name="message"
+            placeholder="Write your message..."
+            required
+          ></textarea
+          ><button class="btn" type="submit">Open Email App →</button>
+          <p class="muted" style="font-size: 12px">
+            Demo only: this form opens your email application. It does not store
+            or send messages through a server.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 Ayesha Rahmat · Student Portfolio</span
+        ><span>Built with HTML & CSS ♡</span>
+      </div>
+    </footer>
+  </body>
+</html>
