@@ -325,3 +325,70 @@ footer{
     gap: 20px;
     flex-wrap: wrap;
 }
+@media (max-width:800px) {
+  .grid{
+    grid-template-columns: repeat(2,1fr);}
+
+    .about-grid
+    .contact-grid
+    {
+   
+    grid-template-columns: 1fr;}
+
+    .hero{
+        min-height: 560px;
+    }
+    .menu{
+        gap: 14px;
+    }
+
+    
+}
+
+
+@media (max-width: 620px){
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 78px;
+        background: #121b2c;
+        padding: 25px 6%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 17px;
+    }
+    .menu-toggle:checked ~ .menu{
+        display: flex;
+    }
+
+    .dropdown-content{
+        position: static;
+        display: block;
+        box-shadow: none;
+        border: 0;
+        padding: 0 0 0 12px;
+        background: transparent;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .section{
+        padding: 65px 0;
+
+    }
+    .about-grid > img{
+        height: 330px;
+    }
+    .hero{
+        min-height: 530px;
+    }
+    .stat{
+        gap: 22px;
+    }
+    
+}
